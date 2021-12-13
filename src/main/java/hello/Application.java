@@ -56,17 +56,10 @@ public class Application {
     @PostMapping("/**")
     public String index(@RequestBody final ArenaUpdate arenaUpdate) {
         System.out.println(arenaUpdate);
-        // String[] commands = new String[]{"F", "R", "L", "T"};
-        final String[] commands = new String[] { "T", "T", "L" };
-        final int i = new Random().nextInt(3);
+        // String[] commands = new String[]{"F", "R", "L", "T", "T", "T", "T", "T", "T", "T"};
+        final int i = new Random().nextInt(10);
         return commands[i];
     }
-
-  private String toNearest(final String myKey, final Map<String, PlayerState> arena){
-    final PlayerState me = arena.get(myKey);
-
-    arena.en
-  }
 
 }
 
