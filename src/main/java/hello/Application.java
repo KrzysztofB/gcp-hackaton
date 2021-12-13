@@ -56,7 +56,7 @@ public class Application {
     @PostMapping("/**")
     public String index(@RequestBody final ArenaUpdate arenaUpdate) {
         System.out.println(arenaUpdate);
-        // String[] commands = new String[]{"F", "R", "L", "T", "T", "T", "T", "T", "T", "T"};
+        String[] commands = new String[]{"F", "R", "L", "T", "T", "T", "T", "T", "T", "T"};
         final int i = new Random().nextInt(10);
         return commands[i];
     }
